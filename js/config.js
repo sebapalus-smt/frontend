@@ -5,7 +5,7 @@ requirejs.config({
         "backbone": 'backbone-min',
         "underscore": 'underscore-min',
         "jquery": 'jquery-1.11.3.min',
-        "backbone.localstorage": 'backbone.localStorage-min'
+        "backbone.localstorage": 'backbone.localstorage-min'
     },
     shim: {
         backbone: {
