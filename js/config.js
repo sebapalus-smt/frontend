@@ -4,7 +4,8 @@ requirejs.config({
         app: '../js',
         "backbone": 'backbone-min',
         "underscore": 'underscore-min',
-        "jquery": 'jquery-1.11.3.min'
+        "jquery": 'jquery-1.11.3.min',
+        "backbone.localstorage": 'backbone.localStorage-min'
     },
     shim: {
         backbone: {
@@ -13,6 +14,9 @@ requirejs.config({
         },
         underscore: {
             exports: '_'
+        },
+        'backbone.localstorage': {
+            deps: ['backbone']
         }
     }
 });

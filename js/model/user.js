@@ -1,6 +1,7 @@
-define('app/model/user', ['backbone'], function() {
+define('app/model/user', ['backbone', 'backbone.localstorage'], function() {
     return Backbone.Model.extend({
-        url: '/users',
+        //url: '/users',
+        localStorage: new Backbone.LocalStorage("users"),
 
         defaults: {
             email: '',
